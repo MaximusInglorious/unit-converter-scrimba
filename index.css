@@ -25,11 +25,24 @@
   padding: 0;
 }
 
+#outer-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-background-color);
+  transition: background-color 0.3s ease;
+}
+
 #main-container {
+  max-width: 35rem;
+  width: 100%;
   font-family: "Inter", sans-serif;
   text-align: center;
   background-color: var(--body-background-color);
   transition: background-color 0.3s ease;
+  border: 4px solid var(--primary-color);
+  border-radius: 0.5rem;
 }
 
 #interactive-section {

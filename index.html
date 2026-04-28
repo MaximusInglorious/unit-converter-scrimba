@@ -12,31 +12,33 @@
     />
   </head>
   <body>
-    <div id="main-container">
-      <div id="interactive-section">
-        <h1>Metric/Imperial Unit Conversion</h1>
-        <input
-          type="text"
-          name="measurement-value"
-          id="txtInp-measurement-value"
-          value="0"
-        />
-        <button id="btn-convert">Convert</button>
-      </div>
-      <div id="display-section">
-        <div class="panel" id="length-panel">
-          <h3>Length (Meter/Feet)</h3>
-          <p>0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+    <div id="outer-container">
+      <div id="main-container">
+        <div id="interactive-section">
+          <h1>Metric/Imperial Unit Conversion</h1>
+          <input
+            type="text"
+            name="measurement-value"
+            id="txtInp-measurement-value"
+            value="0"
+          />
+          <button id="btn-convert">Convert</button>
         </div>
-        <div class="panel" id="volume-panel">
-          <h3>Volume (Litres/Gallons)</h3>
-          <p>0 litres = 0.000 gallons | 0 gallons = 0.000 litres</p>
+        <div id="display-section">
+          <div class="panel" id="length-panel">
+            <h3>Length (Meter/Feet)</h3>
+            <p>0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+          </div>
+          <div class="panel" id="volume-panel">
+            <h3>Volume (Litres/Gallons)</h3>
+            <p>0 litres = 0.000 gallons | 0 gallons = 0.000 litres</p>
+          </div>
+          <div class="panel" id="mass-panel">
+            <h3>Mass (Kilograms/Pounds)</h3>
+            <p>0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+          </div>
+          <button id="theme-switcher">Dark 🌑</button>
         </div>
-        <div class="panel" id="mass-panel">
-          <h3>Mass (Kilograms/Pounds)</h3>
-          <p>0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
-        </div>
-        <button id="theme-switcher">Dark 🌑</button>
       </div>
     </div>
     <script src="index.js"></script>
