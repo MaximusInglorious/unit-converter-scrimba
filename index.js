@@ -60,7 +60,7 @@ function toggleDarkTheme() {
     const isDarkTheme = document.body.classList.toggle('dark-theme');
     console.log(isDarkTheme);
     // event.currentTarget.textContent = (isDarkTheme) ? "Light ☀️" : "Dark 🌑";
-    btnThemeSwitcher.textContent = (isDarkTheme) ? "Light ☀️" : "Dark 🌑";
+    btnThemeSwitcher.textContent = (isDarkTheme) ? "☀️ Light" : "🌙 Dark";
 
     // save to browser localStorage
     localStorage.setItem("isDarkTheme", JSON.stringify(isDarkTheme));
